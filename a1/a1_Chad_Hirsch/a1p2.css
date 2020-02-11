@@ -1,0 +1,187 @@
+@charset "utf-8";
+/* CSS Document */
+h1, h2, h3, p, nav, footer, .actions {
+ font-family: 'Alegreya SC', "Times New Roman", serif;
+}
+header {
+ background-image: url(images/header-background.png);
+ background-repeat: repeat;
+ border: 1px solid black;
+ margin: 1em 10% 6em 10%;
+}
+
+body {
+  background: url( images/background.png);
+}
+
+h1 {
+  font-family: 'Alegreya SC', serif;
+  color:#FF3D00;
+  text-align: center;	
+}
+
+h3 {
+  background-color: #283649;
+  color: white;
+	padding: 1em;
+}
+
+mark.white {
+    color:white;
+    background: none;
+}
+
+mark.orange {
+    color:#FF3D00;
+    background: none;
+	
+}
+
+#mainMenu {
+  background-color: #283649;
+  font-family: 'Alegreya SC', serif;	
+  color:#FF3D00;
+  text-align: center;
+  padding: 0.25em 10%;
+  padding-right: calc(10% - 2em);
+}
+#mainMenu a {
+  margin-right: 0.5em;
+}
+
+summary {
+	padding: 2%;
+	background-color: #ECEFF1;
+	color: #283649;
+}
+
+summary:focus {
+	background-color: #607D8B;
+	color: #ECEFF1;
+}
+
+ul li {
+  display: inline-block;
+}
+ul, li{
+	
+	list-style: upper-latin inside;
+	color: #FF3D00;
+}
+span {
+       color: #283649;
+     }
+
+footer {
+  background-color: #28324B;
+  border: 1px solid black;
+  margin: 1em 10% 2em 10%;
+  text-align: center;
+}
+#copyright {
+  color: white;
+  margin-top: -1em;
+  font-family: 'Alegreya SC', serif;
+}
+
+
+
+details {
+	padding: 1%;
+}
+
+
+article {
+  margin: 1em 10%;
+}
+section {
+  border: 1px solid black;
+  margin: 1em 0;
+  background-color: white;
+}
+em {
+ 
+}
+p {
+  margin: 1em;
+  \
+}
+div.backround{
+	background: url( images/background.png);
+}
+div.actions {
+  background-color: #607D8B;
+  color: white;
+  padding: 0.25em;
+}
+div.actions li {
+  color: white;
+  background-color: #EEEEEE;
+  padding: 2px;
+  padding-left: 0.5em;
+  padding-right: 1em;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+  border-radius: 5px;
+  margin: 0.25em;
+}
+article > div {
+  background: white;
+  padding: 1em;
+  margin: 1em 0;
+  font-family: 'Alegreya SC', serif;
+  text-align: center;
+}
+div > img {
+  border: 1px solid black;
+  padding: .5em;
+}
+figure > img {
+  width: 100%;
+}
+
+
+a {
+  color: #6190FF;
+  font-family: 'Alegreya SC', serif;
+}
+a[href^="mailto"] {
+  background: url(images/email.png) no-repeat 0 3px;
+  padding-left: 1em;
+}
+
+a[href^="tel"] {
+  background: url( images/call.png) no-repeat 0 3px;
+  padding-left: 1em;
+}
+
+a.actionEdit::before {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  content: "";
+  background: url( images/edit.png) no-repeat 0 0;
+  background-size: 100%;
+}
+
+#edit, #flag{
+	background-color: #FF3D00;
+	color: white;
+}
+a.actionFlag::before {
+  display: inline-block;
+  position: relative;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  content: "";
+  background: url( images/flag.png) no-repeat 0 0;
+  background-size: 100%;
+	
+}

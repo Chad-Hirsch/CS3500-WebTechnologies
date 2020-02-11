@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 4 - Assignment 2</title>
+    
+    <link href="bootstrap3_defaultTheme/dist/css/bootstrap.css" rel="stylesheet">
+
+   <link href="reset.css" rel="stylesheet">
+   <link href="a2p4.css" rel="stylesheet">
+
+</head>
+<body>
+
+<header>
+    <div id="topHeaderRow" >
+        <nav >
+            <ul >
+                <li><a href="#"> My Account</a></li>
+                <li><a href="#"> Wish List</a></li>
+                <li><a href="#"> Shopping Cart</a></li>
+                <li><a href="#"> Checkout</a></li>                  
+            </ul>
+        </nav>
+   </div>   <!-- end topHeaderRow -->
+   
+   <div id="logoRow" >
+        <h1>Art Store</h1> 
+   </div>  <!-- end logoRow -->
+   
+   <div id="mainNavigationRow" >
+         <nav >
+             <ul >
+               <li ><a href="#">Home</a></li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Art Works</a></li>
+               <li><a href="#">Artists</a></li>
+             </ul>              
+
+         </nav>
+   </div>  <!-- end mainNavigationRow -->
+   
+</header>
+
+<main>
+   <h2>Customer Registration</h2>
+   <form method="get" action="http://www.randyconnolly.com/tests/process.php">
+   
+      <h3>1. User Info</h3>
+      <table class="userform">
+			<tr>
+                  <td class="header" >First Name</td>
+                  <td class="header" >Last Name</td>
+               </tr>
+               <tr>
+                  <td><input type="text" name="first" class="textInput" required></td>
+                  <td><input type="text" name="last" class="textInput" required></td>
+               </tr>
+               <tr>
+                  <td colspan="2" class="header">Email</td>
+               </tr>
+               <tr>
+                  <td colspan="2"><input type="text" name="email" class="textInput" placeholder="format for email is xxx@yyy.xxx" required></td>
+               </tr>
+               <tr>
+                  <td class="header" >Password</td>
+                  <td class="header" >Password Repeat</td>
+               </tr>
+               <tr>
+                  <td><input type="password" name="pw" pattern="[A-Za-z]{1}[A-Za-z1-9]{4,10}[1-9]{1}" title="Minimum of 6 characters and a
+					maximum of 12 charictars. The password must start with a letter and end with a number." required></td>
+                  <td><input type="password" name="pw" pattern="[A-Za-z]{1}[A-Za-z1-9]{4,10}[1-9]{1}" title="Minimum of 6 characters and a
+					maximum of 12 charictars. The password must start with a letter and end with a number." required></td>
+               </tr>
+        
+      </table>
+      
+      <h3>2. Location</h3>
+      <table class="userform">
+         <tr>
+                  <td class="header" colspan="3" d>Address</td>
+               </tr>
+               <tr>
+                  <td colspan="3"><input type="text" name="address" class="textInput" required></td>
+               </tr>
+               <tr>
+                  <td class="header" >City</td>
+                  <td class="header">State</td>
+                  <td class="header" >Zip</td>
+               </tr>
+               <tr>
+                  <td><input type="text" name="city" class="textInput" id="city" required></td>
+                  <td><input type="text" name="state" class="textInput" maxlength="2" id="state" required></td>
+                  <td><input type="text" name="zip" class="textInput" id="zip" required></td>
+               </tr>
+               <tr>
+                  <td class="header" >Phone</td>
+                  <td colspan="2" class="header" required>Country</td>
+               </tr>
+               <tr>
+                  <td><input type="text" name="phone" class="textInput" placeholder="NNN-NNN-NNNN" pattern="[0-9]{3}[-][0-9]{3}[-][0-9]{4}" title="The phone number must be in the format NNN-NNN-NNNN "required></td>
+                  <td colspan="2">
+                     <select name="country" required>
+                        <option value="UnitedStates">United States</option>
+                        <option value="Canada">Canada</option>
+                        <option value="UnitedKingdom">United Kingdom</option>
+                     </select>
+                  </td>
+               </tr>
+               <tr>
+                  <td colspan="3" class="header">Continent</td>
+               </tr>
+               <tr>
+                  <td colspan="3" required>
+                     <input type="radio" name="country" value="NorthAmerica"> North America<br>
+                     <input type="radio" name="country" value="Europe"> Europe<br>
+                     <input type="radio" name="country" value="SouthAmerica"> South America<br>
+                  </td>
+               </tr>
+
+      </table>    
+
+      <h3>3. Personal Details</h3>
+      <table class="userform">
+       	<tr>
+                  <td class="header" >Birth Day</td>
+                  <td class="header" >Favorite Color</td>
+               </tr>
+               <tr>
+                  <td><input type="date" name="birthday" required></td>
+                  <td><input type="color" name="favorite" value="#000000" required></td>
+               </tr>
+               <tr>
+                  <td class="header">Interest in Art</td>
+               </tr>
+               <tr>
+                  <td colspan="2">Minimal <input type="range" name="interest" min="0" max="10" required> Love it!</td>
+               </tr>
+
+      </table>
+      
+      <h3>4. All Done</h3>
+      <table class="userform">
+        <tr><td class="header">
+        <input type="checkbox" name="accept" value="on" checklist-model="agreement" required>I agree to the Terms of the Site</td> 
+        <td class="header">
+        <button type="reset">Clear Form</button></td>
+        <td class="header">
+        <button type="submit" data-dismiss="modal" ng-click="$close();" ng-if="agreement">Sign me up!</button></td>
+        </tr>
+       
+
+      </table>      
+   </form>
+</main>
+<footer>
+       <p>All images are copyright to their owners. This is just a hypothetical site
+       <span >&copy; 2018 Copyright Art Store</span></p>
+       
+</footer>
+
+
+  </body>
+</html>

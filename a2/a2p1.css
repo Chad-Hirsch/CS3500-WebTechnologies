@@ -1,0 +1,138 @@
+@charset "utf-8";
+/* CSS Document */
+
+.banner {
+	width: 100%;
+	 
+}
+
+
+.banner--title{
+	position: absolute;
+	top:150px;
+	left: 300px;
+	background-color: black;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	
+	
+}
+.banner--title a{
+	color: white;
+	outline-style:outset;
+	outline-color: white; 
+}
+.highlights{
+	
+}
+.highlights--container a{
+	background-color: orange;
+	color: white; 
+	outline: outset;
+	padding: 2px;
+}
+.highlights--container{
+	width: 50%;
+	float: left;
+	
+}
+
+.highlights--container img{
+	width: 48%;
+	float: left;
+	margin-top: 22px;
+	margin-right: 5px;
+}
+
+.highlights--media div{
+	width: 50%;
+	float: left;
+	
+}
+
+.highlights--button{
+	float: right;
+}
+.mosaic{
+	position: relative;
+	margin-top: 80px;
+}
+
+.mosaic-item{
+	float: left;
+	}
+
+.mosaic--a{
+	position: absolute;
+	top: 240px;
+}
+.mosaic--b{
+	position: absolute;
+	top: 240px;
+	left: 590px;
+}
+.mosaic--c{
+	position: absolute;
+	top: 440px;
+	left: 590px;
+}
+.mosaic--d{
+	position: absolute;
+	top: 240px;
+	left: 885px;
+}
+.mosaic--e{
+	position: absolute;
+	top: 640px;
+}
+.mosaic--f{
+	position: absolute;
+	top: 640px;
+	left: 295px;
+}
+.mosaic--g{
+	position: absolute;
+	top: 640px;
+	left: 590px;
+}
+.mosaic--h{
+	position: absolute;
+	top: 640px;
+	left: 885px;
+}
+.mosaic--i{
+	position: absolute;
+	top: 1040px;
+	
+}
+.mosaic--j{
+	position: absolute;
+	top: 840px;
+	left: 295px;
+}
+.mosaic--k{
+	position: absolute;
+	top: 1040px;
+	left: 885px;
+}
+
+.mosaic--a img, .mosaic--j img{
+	width: 580px;
+	height: 390px;
+	
+	
+}
+
+.mosaic--b img, .mosaic--c img, .mosaic--f img, .mosaic--g img, .mosaic--i img, .mosaic--k img{
+	width: 285px;
+	height: 190px;
+}
+
+.mosaic--d img, .mosaic--e img, .mosaic--h img{
+	width: 285px;
+	height: 390px;
+}
+
+
+

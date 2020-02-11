@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="utf-8">
+   <title>Chapter 4</title>
+   <link rel="stylesheet" href="reset.css" />
+   <link rel="stylesheet" href="a2p2.css" />
+</head>
+<body>
+
+   <table id="calendar">
+		<caption>Febuary 2018</caption>
+	
+      <thead>
+         <tr>        
+            <th scope="col" title="Monday">M</th>
+            <th scope="col" title="Tuesday">T</th>
+            <th scope="col" title="Wednesday">W</th>
+            <th scope="col" title="Thursday">T</th>
+            <th scope="col" title="Friday">F</th>
+            <th scope="col" title="Saturday">S</th>
+            <th scope="col" title="Sunday">S</th> 
+         </tr>
+      </thead>
+	
+      <tfoot>
+         <tr>
+           <td colspan="3" id="prev"><a href="#" title="">&laquo; Sep</a></td>
+            <td class="pad">&nbsp; &#9899;</td>
+            <td colspan="3" id="next"><a href="#" title="">Nov &raquo;</a></td>
+         </tr>
+      </tfoot>
+
+      <tbody>      
+         <tr>
+            <td colspan="6" class="pad">&nbsp;</td><td><a href="#" title="">1</td>
+         </tr>      
+         <tr>
+           <td>2</td><td>3</td><td>4</td>
+            <td>5</a></td><td>6</td><td>7</td><td><a href="#" title="">8</td>
+         </tr>      
+         <tr>
+           <td>9</td>
+           <td>10</td>
+           <td >11</td>
+            <td>12</a></td><td>13</td><td>14</td><td><a href="#" title="">15</td>
+         </tr>      
+         <tr>
+            <td id="today">16</td><td>17</td><td>18</td>
+            <td>19</a></td><td>20</td><td>21</td><td><a href="#" title="">22</td>
+         </tr>      
+         <tr>
+           <td>23</td><td>24</td><td>25</td>
+            <td>26</a></td><td>27</td><td>28</td><td><a href="#" title="">29</td>
+            
+         </tr> 
+         <tr>
+           <td>30</td><td>31</td>
+           <td class="pad">&nbsp;</td>
+           <td class="pad">&nbsp;</td>
+           <td class="pad">&nbsp;</td>
+           <td class="pad">&nbsp;</td>
+           <td class="pad">&nbsp;</td>
+         </tr>      
+      </tbody>
+
+	</table>
+
+   <div class="box">
+      <form method="get" action="http://www.randyconnolly.com/tests/process.php">
+         <fieldset>
+            <legend>Meeting Details</legend>
+
+            <p><label>Client Name: </label>
+            <input type="text" name="client" placeholder="Enter name"/></p>
+            <p><label>Client E-mail: </label>
+            <input type="text" name="email" placeholder="Enter email"/></p>
+            <p><label>First Meeting? </label> <input type="checkbox" name="first"  /></p>
+            <p><label>Client Type: </label>
+               <input type="radio" name="type" value="School"/>School
+               <input type="radio" name="type" value="College"/>College
+               <input type="radio" name="type" value="University"/>University
+            </p>
+            </p> 
+            <p><label>Meeting Date: </label>
+            <input type="date" name="date" /></p>            <p><label>Meeting time: </label>
+            <input type="time" name="time" /></p>
+            <input type="submit" text="Add Meeting" />
+      </form>
+   </div>
+
+</body>
+</html>

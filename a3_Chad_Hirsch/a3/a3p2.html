@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Part 2 - Assignment 3</title>
+
+   <link href="reset.css" rel="stylesheet">
+   <link href="a3p2.css" rel="stylesheet">
+   <script src="a3p2.js"></script>
+   <script>
+	function checkPasswordMatch() {
+		var password = $("#pass1").val();
+		var confirmPassword = $("#pass2").val();
+
+		if (password != confirmPassword)
+			$("#divCheckPasswordMatch").html("Passwords do not match!");
+		else
+			$("#divCheckPasswordMatch").html("Passwords match.");
+		   }
+
+		$(document).ready(function () {
+		   $("#pass2").keyup(checkPasswordMatch);
+		});
+	
+	</script>
+   <script>
+	   function phonenumber(inputtxt)
+		{
+		  var phoneno = /^\(?([0-9]{3})\)?[-]?([0-9]{3})[-]?([0-9]{4})$/;
+		  if(inputtxt.value.match(phoneno))
+				{
+			  return true;
+				}
+			  else
+				{
+				alert("Please enter in the  format NNN-NNN-NNNN.");
+				return false;
+				}
+		}
+	
+	</script>
+    <script>
+		function checkPass()
+{
+    
+    var pass1 = document.getElementById('pass1');
+    var pass2 = document.getElementById('pass2');
+    
+    var message = document.getElementById('confirmMessage');
+    
+    var goodColor = "#66cc66";
+    var badColor = "#ff6666";
+    
+    if(pass1.value == pass2.value){
+        
+        pass2.style.backgroundColor = goodColor;
+        message.style.color = goodColor;
+        message.innerHTML = "Passwords Match!"
+    }else{
+        
+        pass2.style.backgroundColor = badColor;
+        message.style.color = badColor;
+        message.innerHTML = "Passwords Do Not Match!"
+    }
+	
+}  
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('#termsChkbx').click(function(){
+				if($(this).attr('checked') == false){
+					 $('#submit').attr("disabled","disabled");   
+				} else {
+					$('#submit').removeAttr('disabled');
+				}
+			});
+		});
+	</script>
+	
+</head>
+
+
+<body>
+
+<header>
+    <div id="topHeaderRow" >
+        <nav >
+            <ul >
+                <li><a href="#"> My Account</a></li>
+                <li><a href="#"> Wish List</a></li>
+                <li><a href="#"> Shopping Cart</a></li>
+                <li><a href="#"> Checkout</a></li>                  
+            </ul>
+        </nav>
+   </div>   <!-- end topHeaderRow -->
+   
+   <div id="logoRow" >
+        <h1>Art Store</h1> 
+   </div>  <!-- end logoRow -->
+   
+   <div id="mainNavigationRow" >
+         <nav >
+             <ul >
+               <li ><a href="#">Home</a></li>
+               <li><a href="#">About Us</a></li>
+               <li><a href="#">Art Works</a></li>
+               <li><a href="#">Artists</a></li>
+             </ul>              
+
+         </nav>
+   </div>  <!-- end mainNavigationRow -->
+   
+</header>
+
+<main>
+   <h2>Customer Registration</h2>
+   <form action="http://www.randyconnolly.com/tests/process.php" method="post" name="myForm" id="mainForm">;
+   
+      <h3>1. User Info</h3>
+      <table class="userform">
+		<tr>
+                        <td>
+                            First Name<br />
+                            <input type="text" name="first" class="required" />
+                        </td>
+                        <td>
+                            Last Name<br />
+                            <input type="text" name="last" class="required"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" >
+                            Email<br />
+                            <input type="email" name="email" placeholder="format for email is xxx@yyy.zzz" size="40" class="required"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Password<br />
+                            <input type="password" name="pass1" id="pass1" placeholder="at least 8 character" class="required"/>
+                        </td>
+                        <td>
+                            Password Repeat<br />
+                            <input type="password" name="pass2" id="pass2" placeholder="at least 8 character" class="required" onkeyup="checkPass(); return false;"/>
+                            <span id="confirmMessage" class="confirmMessage"></span>
+                        </td>
+                    </tr>
+        
+      </table>
+      
+      <h3>2. Location</h3>
+      <table class="userform">
+         <tr>
+                        <td colspan="3">
+                            Address<br />
+                            <input type="text" name="address" class="required"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            City<br />
+                            <input type="text" name="city" class="required"/>
+                        </td>
+                        <td>
+                            State<br />
+                            <input type="text" name="state" class="required"/>
+                        </td>
+                        <td>
+                            Zip<br />
+                            <input type="text" name="zip" class="required"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Phone<br />
+                            <input type="text" name="phone" placeholder="NNN-NNN-NNNN" class="required"  onChange="phonenumber(document.myForm.phone)"/>
+
+                        </td>
+                        <td>
+                            Country<br />
+                            <select name="country">
+                                <option>Canada</option>
+                                <option>United States</option>
+                                <option>Argentina</option>
+                                <option>Cuba</option>
+                                <option>Brazil</option>
+                                <option>Austria</option>
+                                <option>Romania</option>
+				<option>Italy</option>
+                            </select>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Continent<br />
+                           
+                            <input type="radio" name="continent" value="North America" require>North America<br />
+                            <input type="radio" name="continent" value="Europe" require>Europe<br />
+                            <input type="radio" name="continent" value="South America" require>South America<br />
+                        </td>
+                    </tr>
+
+      </table>    
+
+      <h3>3. Personal Details</h3>
+      <table class="userform">
+      	<tr>
+                        <td>
+                            Birthday<br />
+                            <input type="test" name="birthday" class="required" placeholder="##/##/####"/>
+                            
+                        </td>
+                        <td>
+                            Favorite Color<br />
+                            <input type="color" name="favorite" reqired />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Interest in Art<br />
+                            Minimal  <input type="range" name="interest" min="0" max="10" reqired/>  Love It!
+                        </td>
+                    </tr> 
+
+      </table>
+      
+     <h3>4. All Done</h3>
+      <table class="userform">
+      	 <tr>
+            <td colspan="2">
+              <div class="rectangle centered"> 
+               	   
+               	   	<input type="checkbox" id="termsChkbx" onchange="document.getElementById('submit').disabled = !this.checked;" name="accept" class="required" size="80">
+               	   	<label >I agree to the Terms of the Site </label>
+               	   	 
+                       
+				</div>
+            </td>
+            
+            <td>
+            	<input type="reset" value="Clear Form" class="rounded">
+				<input type="submit" disabled id="submit" value="Submit" class="button">
+            </td>
+         </tr>  
+
+      </table>      
+   </form>
+</main>
+<footer>
+       <p>All images are copyright to their owners. This is just a hypothetical site
+       <span >&copy; 2014 Copyright Art Store</span></p>
+</footer>
+
+
+  </body>
+</html>

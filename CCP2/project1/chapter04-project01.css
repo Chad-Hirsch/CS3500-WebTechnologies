@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+body{
+	font-family: serif;
+	background-color: #E8EAF6;
+}
+
+h1, h2, h3{
+	font-family: sans-serif;
+}
+
+header, footer{
+	background-color: #1A237E;
+}
+
+nav{
+	background-color: #3F51B5;
+	padding: 1px 0px;
+}
+
+a:link, a:visited{
+	color:#00B0FF
+}
+
+a:hover{
+	background-color: #F50057;
+	color: white; 
+}
+
+ul li{
+	display: inline;
+}
+
+header h1, header p{
+	color: white;
+	padding: 0px 10px 0px;
+}
+
+h1+p{
+	font-style: italic;
+}
+
+main{
+	background-color: white;
+}
+
+section h3{
+	background-color: #7986CB;
+	color: white;
+	text-transform: uppercase;
+	padding: 1em;
+	

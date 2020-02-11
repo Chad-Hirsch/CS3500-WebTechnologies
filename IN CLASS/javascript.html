@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>NULL</title>
+<script type="text/javascript">
+	function dice(num_faces){
+		this.faces = num_faces;
+		this.randomroll = function(){
+			var randNum = Math.floor(Math.random() * this.faces.length);
+			return randNum;
+		}
+	}
+	function roll(){
+		var n_f = document.getElementById("faces").value;
+		var x1 = new dice();
+		document.getElementById("result").innerHTML = x1.randomroll();
+		//alert("The roll was: " + x1.randomroll());
+	}
+</script>
+
+
+</head>
+
+<body>
+	<h1> DICE ROLL</h1>
+	<p>Click the button to roll the die</p>
+	<form>
+		<label>Choose dice # faces</label><br>
+		<input type="number" name="faces" id="faces" min="4" max="20" value="4">
+	</form>
+	<button type="button" onClick="roll()">Roll</button>
+	<p>The roll was: <span id="result"> no roll</span></p>
+
+
+
+
+
+</body>
+</html>

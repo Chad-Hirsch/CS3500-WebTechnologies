@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Part 3 of Assignment 1</title>
+  
+  <link rel="stylesheet" type="text/css" href="reset.css" />
+  <link rel="stylesheet" type="text/css" href="a1p2.css" />
+</head>
+
+<body>
+  
+ <header>
+	 <h1>CRM <mark class="white">Admin</mark></h1>
+ 
+   <nav id="mainMenu">
+		<ul id="nav">
+			<li><a href="#Personal"><mark class="orange">Personal Details</mark></a></li>
+		  <li><a href="#Contact"><mark class="orange">Contact</mark></a></li>
+		  <li><a href="#Location"><mark class="orange">Location</mark></a></li>
+		  <li><a href="#About"><mark class="orange">About Me</mark></a></li>
+		  <li><a href="#Tasks"><mark class="orange">Tasks</mark></a></li>
+		  <li><a href="#Sales"><mark class="orange">Sales Activity</mark></a></li>
+		</ul>
+	  </nav>
+</header>
+ 
+  <article id="main">      
+
+    <div class="backround">
+      <img src="images/profile-96x96.jpg" />
+      <h2>Jack  Smith</h2>
+    </div>
+
+    <section>
+      <h3 id='Personal'>Personal Details</h3>
+      <p>
+        <em>Address:</em> 1 Microsoft Way<br/>
+        <em>City:</em>    Redmond<br/>
+        <em>Region:</em>  WA</br/>
+        <em>Country:</em> USA<br/>
+        <em>Postal:</em>  98052-8300<br/>
+      </p>   
+      <div class="actions">
+        <ul>
+          <li id="edit"><a href="#" class="actionEdit"><mark class="white">Edit</mark></a></li>
+			<li id="flag"><a href="#" class="actionFlag"><mark class="white">Flag</mark></a></li>
+        </ul>
+      </div>        
+    </section>
+
+    <section>
+      <h3 id='Contact'>Contact</h3> 
+      <p>
+        <em>Phone:</em> <a href="tel:+14258828080">+1 (425) 882-8080</a><br/>
+        <em>Email:</em> <a href="mailto:jacksmith@microsoft.com">jacksmith@microsoft.com</a>  
+      </p>
+      <div class="actions">
+        <ul>
+          <li id="edit"><a href="#" class="actionEdit"><mark class="white">Edit</mark></a></li>
+			<li id="flag"><a href="#" class="actionFlag"><mark class="white">Flag</mark></a></li>
+        </ul>
+      </div>          
+    </section>
+
+    <section>
+      <h3 id='Location'>Location</h3> 
+      <figure>
+      <img src="images/map.png" alt="Map" style="width:400px;height:300px;">
+	  </figure>
+      <div class="actions">
+        <ul>
+          <li id="edit"><a href="#" class="actionEdit"><mark class="white">Edit</mark></a></li>
+			<li id="flag"><a href="#" class="actionFlag"><mark class="white">Flag</mark></a></li>
+        </ul>
+      </div>          
+    </section>
+
+    <section>
+      <h3 id='About'>About Me</h3> 
+      <p>
+        On paper, I'm a computer scientist. To most people that probably means I spend hours learning the ins and outs of coding languages, spend more time talking to my computer than I do to other people, and my mornings begin with an energy drink because sometimes I sleep a lot less than I probably should. While partially true, above all else my computer is the way I give to others.
+      </p>
+      <div class="actions">
+        <ul>
+          <li id="edit"><a href="#" class="actionEdit"><mark class="white">Edit</mark></a></li>
+			<li id="flag"><a href="#" class="actionFlag"><mark class="white">Flag</mark></a></li>
+        </ul>
+      </div>          
+    </section>
+
+    <section>
+      <h3 id='Tasks'>Tasks</h3> 
+      <details>
+        <summary>Individual Tasks</summary>
+        <ol>
+		  <li><span>Update warehouse catalog.</span></li>
+          <li><span>Organize weekly sales schedule.</span></li>
+          <li><span>Test production software.</span></li>
+        </ol>
+      </details>
+      <details>
+        <summary>Collective Tasks</summary>
+        <ol>
+          <li><span>Organize and guide Friday's meetings.</span></li>
+          <li><span>Meet with customers.</span></li>
+        </ol>
+      </details>
+      <details>
+        <summary>Client-Focus Tasks</summary>
+        <p><span>The following is the sales strategy to approach client-focus tasks:</span></p>
+        <img src="images/strategy-chart.png" width="50%" height="25%">
+      </details>        
+    </section>
+
+    <section>
+      <h3 id='Sales'>Sales Activity</h3>
+      <figure>
+        <img src="images/chart.png" alt="chart" title="sales chart"style="width:420px;height:230px;" />
+      </figure>
+    </section>
+  </article>
+
+  <footer>
+    <p><a href="#">Home</a> | <a href="#">Catalog</a> | <a href="#">Inventory</a></p>
+    <p id="copyright">Copyright &copy; 2013 Not a Real CRM</p>
+  </footer>
+  
+</body>
+</html>
